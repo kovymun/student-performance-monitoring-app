@@ -13,5 +13,4 @@ public class StudentPerformanceAppApplication {
 		SpringApplication.run(StudentPerformanceAppApplication.class, args);
 	}
 
-
 }
