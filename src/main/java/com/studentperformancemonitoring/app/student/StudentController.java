@@ -12,7 +12,8 @@ public class StudentController {
 
     private final StudentService studentService;
 
-    // Constructor for injecting the service layer into the Student controller class    @Autowired
+    // Constructor for injecting the service layer into the Student controller class
+    @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
@@ -31,6 +32,7 @@ public class StudentController {
         studentService.addStudent(student);
     }
 
+    // Controller function that handles deletion of student from the DB.
     @DeleteMapping(path = "/remove-student/{studentId}")
     public void deleteStudent(@PathVariable("studentId") Long StudentId) {
         studentService.deleteStudent(StudentId);

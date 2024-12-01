@@ -1,3 +1,6 @@
+/* Entity class representing the Student schema mapped to a database table (model-schema)*/
+
+
 package com.studentperformancemonitoring.app.student;
 
 import jakarta.persistence.*;
